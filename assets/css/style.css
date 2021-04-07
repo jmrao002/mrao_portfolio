@@ -1,0 +1,223 @@
+* {
+  font-family: "Major Mono Display", monospace;
+  box-sizing: inherit;
+}
+
+.fontBlackRedShadow {
+  color: #35383a;
+  text-shadow: 2px 2px #ff0000;
+}
+
+/* Nav Bar Styling */
+
+nav {
+  top: auto;
+  display: flex;
+  flex-flow: row;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  background: transparent;
+  bottom: auto;
+  left: auto;
+  padding-bottom: 0;
+}
+
+.button:hover {
+    background: #35383a;
+    color: white;
+}
+
+.topBar {
+  width: 100%;
+  overflow: hidden;
+}
+
+.bcgWhite {
+  background-color: white;
+}
+
+.wide {
+  letter-spacing: 4px;
+}
+
+.padding {
+  padding: 8px 16px;
+}
+
+.button {
+  white-space: normal;
+}
+
+.barItem {
+  padding: 8px 16px;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+.paddingRgt {
+  padding-right: 30px;
+}
+
+/* Header Styling */
+
+.displayContainer {
+  position: relative;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.justifyCtr {
+  justify-content: center;
+}
+
+element.style {
+  max-width: 2000px;
+}
+
+img {
+  position: relative;
+  display: flex;
+}
+
+video {
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.overlay {
+  float: none;
+  display: block;
+}
+
+/* Header Text Positioning */
+
+.dspMiddle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mgnTop {
+  margin-top: 16px;
+}
+
+.center {
+  text-align: center;
+}
+
+.xxlarge {
+  font-size: 72px;
+}
+
+.txtWhite {
+  color: #ffffff;
+}
+
+.txtShadow {
+  text-shadow: 2px 2px 2px black;
+}
+
+.txtOpacity {
+  opacity: 0.95;
+}
+
+.padding {
+  padding: 8px 16px;
+}
+
+.black {
+  color: #ffffff;
+  background-color: black;
+}
+
+.opacityMin {
+  opacity: 0.95;
+}
+
+.txtLightGray {
+  color: #f1f1f1;
+}
+
+/* Main Styling */
+
+main {
+  width: 100%;
+  display: inline-block;
+  margin: 20px;
+}
+
+main section {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  max-width: 2000px;
+}
+
+.mainStyling img {
+  max-height: 200px;
+}
+
+.mainStyling h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.spacing {
+  width: calc(70% - 10px);
+}
+
+/* Footer Styling */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 769px) {
+  .flexEnd {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  video {
+    display: none;
+  }
+}
+
+/* Bugs
+
+Media query causes title to move up page
