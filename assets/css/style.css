@@ -1,6 +1,14 @@
 * {
   font-family: "Major Mono Display", monospace;
-  box-sizing: inherit;
+  box-sizing: content-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
 }
 
 .fontBlackRedShadow {
@@ -96,16 +104,17 @@ img {
 }
 
 video {
-  object-fit: fill;
-  object-position: center;
+  display: none;
 }
 
 .vidBgd {
   display: none;
+  width: 0;
+  height: auto;
 }
 
 .portraitSize {
-  max-width: 100%;
+  width: 100%;
 }
 
 .overlay {
@@ -166,7 +175,7 @@ video {
 /* Main Styling */
 
 main {
-  width: 100%;
+  width: 80%;
   display: inline-block;
   margin: 20px;
 }
@@ -174,12 +183,16 @@ main {
 main section {
   margin-bottom: 20px;
   padding: 50px;
+  width: 80%;
   height: 150px;
   display: flex;
+  flex-direction: column;
 }
 
 main section img {
   padding: 0 20px;
+  width: 50%;
+  height: 50%;
 }
 
 main section h2 {
@@ -195,7 +208,6 @@ main section p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(70% - 100px);
 }
 
 /* Footer Styling */
@@ -212,13 +224,21 @@ footer {
 
 /* Media Queries */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   main section {
     height: 300px;
+    flex-direction: row;
+  }
+  video {
+    display: block;
+    object-fit: fill;
+    object-position: center;
   }
   .vidBgd {
     display: block;
+    width: 100%;
   }
+
   .heroDsp {
     top: 50%;
     left: 50%;
