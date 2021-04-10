@@ -3,8 +3,7 @@
   box-sizing: content-box;
 }
 
-html,
-body {
+html {
   overflow-x: hidden;
 }
 body {
@@ -176,8 +175,9 @@ video {
 
 main {
   width: 80%;
-  display: inline-block;
   margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 main section {
@@ -191,8 +191,8 @@ main section {
 
 main section img {
   padding: 0 20px;
-  width: 50%;
-  height: 50%;
+  width: 150px;
+  height: 150px;
 }
 
 main section h2 {
@@ -228,6 +228,11 @@ footer {
   main section {
     height: 300px;
     flex-direction: row;
+  }
+  main section img {
+    padding: 0 20px;
+    width: 300px;
+    height: 300px;
   }
   video {
     display: block;
