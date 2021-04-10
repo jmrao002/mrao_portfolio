@@ -18,7 +18,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  border-bottom: 1px solid rgba(0,0,0,.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   background: transparent;
   bottom: auto;
   left: auto;
@@ -26,8 +26,8 @@ nav {
 }
 
 .button:hover {
-    background: #35383a;
-    color: white;
+  background: #35383a;
+  color: white;
 }
 
 .topBar {
@@ -90,18 +90,22 @@ ul li {
   justify-content: center;
 }
 
-element.style {
-  max-width: 2000px;
-}
-
 img {
-  position: relative;
   display: flex;
+  align-items: center;
 }
 
 video {
   object-fit: fill;
   object-position: center;
+}
+
+.vidBgd {
+  display: none;
+}
+
+.portraitSize {
+  max-width: 100%;
 }
 
 .overlay {
@@ -111,10 +115,10 @@ video {
 
 /* Header Text Positioning */
 
-.dspMiddle {
+.heroDsp {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 85%;
+  left: 70%;
   transform: translate(-50%, -50%);
 }
 
@@ -126,8 +130,8 @@ video {
   text-align: center;
 }
 
-.xxlarge {
-  font-size: 72px;
+.txtSize {
+  font-size: 24px;
 }
 
 .txtWhite {
@@ -170,23 +174,28 @@ main {
 main section {
   margin-bottom: 20px;
   padding: 50px;
-  height: 300px;
+  height: 150px;
   display: flex;
-  justify-content: space-around;
-  max-width: 2000px;
 }
 
-.mainStyling img {
-  max-height: 200px;
+main section img {
+  padding: 0 20px;
 }
 
-.mainStyling h2 {
+main section h2 {
   margin-bottom: 20px;
   font-size: 36px;
 }
 
+main section p {
+  display: none;
+}
+
 .spacing {
-  width: calc(70% - 10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(70% - 100px);
 }
 
 /* Footer Styling */
@@ -203,18 +212,21 @@ footer {
 
 /* Media Queries */
 
-@media screen and (max-width: 769px) {
-  ul {
-    display: none;
+@media only screen and (min-width: 769px) {
+  main section {
+    height: 300px;
+  }
+  .vidBgd {
+    display: block;
+  }
+  .heroDsp {
+    top: 50%;
+    left: 50%;
+  }
+  .txtSize {
+    font-size: 72px;
+  }
+  main section p {
+    display: block;
   }
 }
-
-@media screen and (max-width: 769px) {
-  video {
-    display: none;
-  }
-}
-
-/* Bugs
-
-Media query causes title to move up page
