@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<title>M Rao's Portfolio</title>
+<title>Michael Rao</title>
 <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon.ico" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
 <body>
-
+    <script defere src="assets/js/index.js"></script>
     <!-- Navbar (sits on top) -->
     <nav class="navbar">
         <div>
@@ -50,7 +50,7 @@
         </div>
     </nav>
     <!-- Header with background video -->
-    <header>
+    <header id="intro" class="height-100">
         <div class="overlay"></div>
         <video playsinline autoplay muted loop>
             <source src="./assets/videos/skatevid.mp4" type="video/mp4">
@@ -58,26 +58,25 @@
         <div class="container h-100">
             <div class="d-flex h-100 text-center align-items-center">
                 <div class="w-100 text-white">
-                    <h1 class="display-1">M Rao</h1>
-                    <h2 class="display-4">Portfolio</h2>
+                    <h1 class="display-1 major-mono">M Rao</h1>
+                    <h2 class="display-4 major-mono">Portfolio</h2>
                 </div>
             </div>
         </div>
     </header>
-    <!-- Main Portfolio Content -->
-    <main class="container">
-        <div id="portfolio" class="row">
+    <!-- Portfolio Content -->
+    <section id="portfolio" class="container">
+        <div class="row">
             <div class="col-sm">
                 <img src="" class="card-img-top" alt="Placeholder Image" />
                 <div class="card-body">
                     <h3 class="card-title">Work Day Scheduler</h3>
                     <p class="card-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et
-                        dolore magna aliqua. Amet luctus venenatis lectus magna fringilla urna porttitor.
+                        labore et dolore magna aliqua. Amet luctus venenatis lectus magna fringilla urna porttitor.
                     </p>
-                    <a href="https://jmrao002.github.io/hw-planner/" target="_blank" class="btn btn-primary">See Your Sched</a>
+                    <a href="https://jmrao002.github.io/hw-planner/" target="_blank" class="btn btn-primary">Don't Miss
+                        Your Meeting</a>
                 </div>
             </div>
             <div class="col-sm">
@@ -86,29 +85,29 @@
                     <h3 class="card-title">Spongebob Trivia Challenge</h3>
                     <p class="card-text">
                         Dignissim suspendisse in est ante in nibh mauris cursus. Gravida quis blandit turpis cursus in
-                        hac
-                        habitasse platea. Venenatis urna cursus eget nunc scelerisque viverra mauris in.
+                        hac habitasse platea. Venenatis urna cursus eget nunc scelerisque viverra mauris in.
                     </p>
-                    <a href="https://jmrao002.github.io/HW-Quiz/" target="_blank" class="btn btn-primary">Oh Boy 3am!</a>
+                    <a href="https://jmrao002.github.io/HW-Quiz/" target="_blank" class="btn btn-primary">Oh Boy
+                        3am!</a>
                 </div>
             </div>
             <div class="col-sm">
                 <img src="" class="card-img-top" alt="Placeholder Image" />
                 <div class="card-body">
-                    <h3 class="card-title">Project 3</h3>
+                    <h3 class="card-title">Weather Dashboard</h3>
                     <p class="card-text">
                         Arcu felis bibendum ut tristique et egestas quis ipsum suspendisse. Montes nascetur ridiculus
-                        mus
-                        mauris
-                        vitae ultricies leo integer malesuada. Eget nunc scelerisque viverra mauris in aliquam sem
-                        fringilla.
+                        mus mauris vitae ultricies leo integer malesuada. Eget nunc scelerisque viverra mauris in
+                        aliquam sem fringilla.
                     </p>
-                    <a href="https://jmrao002.github.io/weatherdash/" target="_blank" class="btn btn-primary">Rainy Party</a>
+                    <a href="https://jmrao002.github.io/weatherdash/" target="_blank" class="btn btn-primary">Rainy
+                        Party</a>
                 </div>
             </div>
         </div>
-    </main>
-    <footer class="footer">
+    </section>
+    <section id="contact"></section>
+    <footer class="text-center footer">
         <p>© Copyright 2021</p>
     </footer>
 </body>
