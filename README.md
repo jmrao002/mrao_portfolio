@@ -2,20 +2,19 @@
 
 Built by Michael Rao
 
-A simple HTML/CSS webpage describing services provided by Horiseon, a fictional company providing SEO services. Screenshots of the webpage can be found here ./assets/images/WebScreenshot1, ./assets/images/WebScreenshot2, ./assets/images/MobileScreenshot1, and ./assets/images/MobileScreenshot2.
+A simple HTML/CSS webpage describing services provided by Horiseon, a fictional company providing SEO services. Screenshots of the webpage can be found here ./assets/images/WebScreenshot1.png, ./assets/images/WebScreenshot2.png, and ./assets/images/WebScreenshot3.png.
 
 # Technologies Used
 
     - HTML
     - CSS
+    - Bootstrap CSS
 
 # Description
 
-This browser application allows users to view a framework for a website that will hold Michael Rao's portfolio works. A navigation bar allows users to jump to the portfolio section of the page that holds Lorem Ipsum descriptions of upcoming work. The nav bar also allows users to access Michael's GitHub, LinkedIn, and Twitter pages, as well as contact via email. Nab bar items highlight in gray when hovered over.
+This browser application allows users to learn more about Michael Rao. The nav bar allows users to access Michael's resume, GitHub, LinkedIn, and Twitter pages, as well as contact via email. Clicking "About" will take users to another page with a headshot and a short bio.
 
-Additionally, the page contains a photo of Michael, visible on screens smaller than 768 pixels, and a video of Michael and his dog, visible on screens larger than 768 pixels.
-
-In the main section of the page, there are placeholders for future portfolio projects. Placeholder decriptions of those projects are visible only at screen sizes above 768 pixels.
+In the main section of the page, there are cards that link to Michael's projects.
 
 Finally, a footer shows the page copyright.
 
