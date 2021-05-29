@@ -27,6 +27,10 @@ header {
   min-height: 25rem;
 }
 
+.height-5 {
+  height: 5vh;
+}
+
 header video {
   position: absolute;
   top: 50%;
