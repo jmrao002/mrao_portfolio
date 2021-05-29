@@ -9,6 +9,7 @@ A simple HTML/CSS webpage describing services provided by Horiseon, a fictional 
     - HTML
     - CSS
     - Bootstrap CSS
+    - jQuery
 
 # Description
 
