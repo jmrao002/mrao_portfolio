@@ -57,3 +57,7 @@ header .overlay {
   opacity: 0.5;
   z-index: 1;
 }
+
+.bcg-yellow {
+  background-color: #f0ad4e;
+}
