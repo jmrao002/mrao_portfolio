@@ -1,112 +1,137 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<title>M Rao's Portfolio</title>
+<title>Michael Rao</title>
+<link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon.ico" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
 <body>
-
-    <!-- Navbar (sits on top) -->
-    <nav class="topBar bcgWhite wide">
+    <nav class="navbar">
         <div>
-            <a href="#portfolio" class="barItem button">
+            <a href="#portfolio" class="navbar-brand">
                 <b>M Rao</b>
                 Portfolio
             </a>
         </div>
         <!-- Flex row. Hide links on small screens. -->
-        <div class="barItem">
-            <ul>
-                <li class="button">
+        <div class="navbar-nav">
+            <div>
+                <div id="resume" class="d-inline-flex p-2 flex-column text-center">
+                    <a href="https://github.com/jmrao002/">
+                        <img src="https://cdn4.iconfinder.com/data/icons/48-bubbles/48/12.File-512.png"
+                            alt="resume logo" height=24px />
+                    </a>
+                    <p>Resume</p>
+                </div>
+                <div id="github" class="d-inline-flex p-2 flex-column text-center">
                     <a href="https://github.com/jmrao002/">
                         <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-256.png"
                             alt="Github logo" height=24px />
                     </a>
-                </li>
-                <li class="button">
+                    <p>GitHub</p>
+                </div>
+                <div id="linkedin" class="d-inline-flex p-2 flex-column text-center">
                     <a href="https://www.linkedin.com/in/jmrao002/">
                         <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/linkedin-256.png"
                             alt="LinkedIn logo" height=24px />
                     </a>
-                </li>
-                <li class="button">
+                    <p>LinkedIn</p>
+                </div>
+                <div id="twitter" class="d-inline-flex p-2 flex-column text-center">
                     <a href="https://twitter.com/_jmrao">
                         <img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png"
                             alt="Twitter logo" height=24px />
                     </a>
-                </li>
-                <li class="button">
+                    <p>Twitter</p>
+                </div>
+                <div id="gmail" class="d-inline-flex p-2 flex-column text-center">
                     <a href="mailto:jmichaelrao@gmail.com">
                         <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/147_Gmail_logo_logos-256.png"
-                            alt="GMail logo" height=24px />
+                            alt="Gmail logo" height=24px />
                     </a>
-                </li>
-            </ul>
+                    <p>Gmail</p>
+                </div>
+            </div>
         </div>
     </nav>
-    <!-- Header with background video and image for small screens -->
-    <header class="displayContainer content wide flex justifyCtr" id="home">
-        <section class="imgBgd">
-            <img class="portraitSize" src="./assets/images/selfPortrait.png" type="image/png" alt="Self Portrait">
-        </section>
-        <section class="vidBgd">
-            <video autoplay muted loop>
-                <source src="./assets/videos/skatevid.mp4" type="video/mp4">
-        </section>
-        <section class="heroDsp mgnTop center">
-            <h1 class="txtSize txtWhite txtShadow txtOpacity">
-                <span class="padding black opacityMin overlay">
-                    <b>M Rao</b>
-                </span>
-                <span class="txtLightGray">Portfolio</span>
-            </h1>
-        </section>
+    <!-- Header with background video -->
+    <header id="intro" class="height-100">
+        <div class="overlay"></div>
+        <video playsinline autoplay muted loop>
+            <source src="./assets/videos/skatevid.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <h1 class="display-1 major-mono">M Rao</h1>
+                    <h2 class="display-4 major-mono">Portfolio</h2>
+                </div>
+            </div>
+        </div>
     </header>
-    <!-- Main Portfolio Content -->
-    <main>
-        <section id="portfolio">
-            <img src="https://images.unsplash.com/flagged/photo-1593005510329-8a4035a7238f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                alt="Placeholder Image" />
-            <div class="spacing">
-                <h2>Project 1</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Amet luctus venenatis lectus magna fringilla urna porttitor.
-                </p>
+    <!-- Portfolio Content -->
+    <section id="portfolio" class="container header-100 align-items-center">
+        <div class="row">
+            <div class="col-sm">
+                <hr>
+                <img src="./assets/images/codeImage.jpeg" class="card-img-top" alt="Placeholder Image" />
+                <div class="card-body">
+                    <h3 class="card-title">Work Day Scheduler</h3>
+                    <p class="card-text">
+                        Use this application to schedule events throughout the day.
+                    </p>
+                    <a href="https://jmrao002.github.io/hw-planner/" target="_blank" class="btn btn-primary">Don't Miss
+                        Your Meeting</a>
+                </div>
             </div>
-        </section>
-        <section>
-            <img src="https://images.unsplash.com/flagged/photo-1593005510329-8a4035a7238f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                alt="Placeholder Image" />
-            <div class="spacing">
-                <h2>Project 2</h2>
-                <p>
-                    Dignissim suspendisse in est ante in nibh mauris cursus. Gravida quis blandit turpis cursus in hac
-                    habitasse platea. Venenatis urna cursus eget nunc scelerisque viverra mauris in.
-                </p>
+            <div class="col-sm">
+                <hr>
+                <img src="./assets/images/codeImage.jpeg" class="card-img-top" alt="Placeholder Image" />
+                <div class="card-body">
+                    <h3 class="card-title">Spongebob Trivia Challenge</h3>
+                    <p class="card-text">
+                        How well do you know SpongeBob Squarepants?
+                    </p>
+                    <a href="https://jmrao002.github.io/HW-Quiz/" target="_blank" class="btn btn-primary">Oh Boy
+                        3am!</a>
+                </div>
             </div>
-        </section>
-        <section>
-            <img src="https://images.unsplash.com/flagged/photo-1593005510329-8a4035a7238f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                alt="Placeholder Image" />
-            <div class="spacing">
-                <h2>Project 3</h2>
-                <p>
-                    Arcu felis bibendum ut tristique et egestas quis ipsum suspendisse. Montes nascetur ridiculus mus
-                    mauris
-                    vitae ultricies leo integer malesuada. Eget nunc scelerisque viverra mauris in aliquam sem
-                    fringilla.
-                </p>
+            <div class="col-sm">
+                <hr>
+                <img src="./assets/images/codeImage.jpeg" class="card-img-top" alt="Placeholder Image" />
+                <div class="card-body">
+                    <h3 class="card-title">Weather Dashboard</h3>
+                    <p class="card-text">
+                        Enter your city name and see the weather!
+                    </p>
+                    <a href="https://jmrao002.github.io/weatherdash/" target="_blank" class="btn btn-primary">Do I need
+                        a jacket?</a>
+                </div>
             </div>
-
-        </section>
-    </main>
+            <div class="col-sm">
+                <hr>
+                <img src="./assets/images/codeImage.jpeg" class="card-img-top" alt="Placeholder Image" />
+                <div class="card-body">
+                    <h3 class="card-title">Lord of the Rings Drink Picker</h3>
+                    <p class="card-text">
+                        Pick your favorite Lord of the Rings character, then watch the magic happen! You'll get a fun
+                        cocktail and recipe that you can rate.
+                    </p>
+                    <a href="https://jmrao002.github.io/LOTRdrinkPicker/" target="_blank" class="btn btn-primary">You
+                        Shall
+                        Not Pass (Out)!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact"></section>
+    <footer class="text-center footer">
+        <p>© Copyright 2021</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
-
-<footer>
-    <p>© Copyright 2021</p>
-</footer>
